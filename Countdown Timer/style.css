@@ -25,6 +25,11 @@
   font-size: 5rem;
   font-weight: 500;
 }
+.year h5 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 0px;
+}
 .timer {
   display: flex;
   justify-content: center;
