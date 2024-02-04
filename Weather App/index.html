@@ -4,6 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <h1>Weather App</h1>
+          <h5>03 Februari 2024</h5>
+        </div>
+        <form class="search">
+          <input type="search" name="search" placeholder="Search" />
+          <button>
+            <img src="Image/icons/search.svg" alt="icon-search" />
+          </button>
+        </form>
+      </header>
+      <section class="weather">
+        <img src="Image/icons/bright.svg" alt="icons-bright" />
+        <h1>18<sup>O</sup>C</h1>
+      </section>
+      <section class="information">
+        <div class="locataion">
+          <h1 class="regency" id="regency">Denpasar</h1>
+          <h3 class="country">Indonesia</h3>
+        </div>
+        <div class="humadity">
+          <img src="Image/icons/humidity.svg" alt="icon-humadity" />
+          <div class="text">
+            <h5>53%</h5>
+            <p>Humadity</p>
+          </div>
+        </div>
+        <div class="humadity">
+          <img src="Image/icons/Wind Speed.svg" alt="icon-windSpeed" />
+          <div class="text">
+            <h5>5.66 Km/h</h5>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
