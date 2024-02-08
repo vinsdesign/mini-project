@@ -17,7 +17,7 @@ h1 {
 p {
   margin-bottom: 20px;
 }
-.search {
+.searchForm {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,4 +79,57 @@ p {
   margin: 20px auto;
   display: none;
   cursor: pointer;
+}
+.resultImage {
+  width: 100%;
+  margin: 10px auto 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.resultImage a {
+  position: relative;
+}
+.gradient {
+  background-image: linear-gradient(to top, #000, transparent);
+  opacity: 0;
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  color: white;
+  border-radius: 10px;
+  transition: ease-in 0.4s;
+}
+.gradient:hover {
+  background-image: linear-gradient(to top, #000, transparent);
+  opacity: 0.9;
+}
+.gradient .profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-position: center;
+}
+.gradient .profile h2 {
+  bottom: 35px;
+  position: absolute;
+  left: 70px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.gradient .profile p {
+  bottom: 3px;
+  position: absolute;
+  left: 70px;
+  font-weight: 400;
+  font-size: 12px;
+}
+.resultImage a img {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
 }
