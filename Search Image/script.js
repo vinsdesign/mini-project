@@ -14,6 +14,10 @@ async function searchImage() {
   const response = await fetch(urlApi);
   const data = await response.json();
 
+  if (page === 1) {
+    searchResult.innerHTML = "";
+  }
+
   console.log(data);
   const results = data.results;
   results.map((result) => {
@@ -47,9 +51,14 @@ async function searchImage() {
     imageLink.appendChild(image);
     searchResult.appendChild(imageLink);
   });
+  showMore.style.display = "block";
 }
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
   page = 1;
+  searchImage();
+});
+showMore.addEventListener("click", function () {
+  page++;
   searchImage();
 });
