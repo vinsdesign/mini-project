@@ -12,6 +12,7 @@ body {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: hidden;
 }
 nav {
   display: flex;
@@ -24,8 +25,136 @@ nav {
   opacity: 0.9;
 }
 nav > img {
-  width: 120px;
+  width: 150px;
 }
 nav > h1 {
   font-size: 48px;
+}
+header {
+  display: flex;
+  padding-top: 100px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+header .player > img {
+  height: 90vh;
+}
+.logoMPL {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.logoMPL > img {
+  width: 200px;
+}
+.logoMPL .bestOf {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+.bestOf h1 {
+  font-size: 1.8rem;
+}
+.bestOf select {
+  width: 90px;
+  border: none;
+  padding: 5px 20px;
+  font-size: 1.7rem;
+  border-radius: 7px;
+}
+section .boxInput {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  background-color: #fff;
+  padding: 10px 40px;
+  border-left: 10px solid #f5ab38;
+  border-right: 10px solid #ffde00;
+}
+section .boxInput div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+section .boxInput div h1 {
+  font-size: 5rem;
+}
+section .point {
+  gap: 20px;
+}
+section .btnPoint {
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 80px;
+}
+section .btnPoint div {
+  display: flex;
+  gap: 20px;
+}
+section .btnPoint button {
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 70px;
+  cursor: pointer;
+}
+section .btnPoint .btnPointLeft button {
+  background-color: #f5ab38;
+}
+section .btnPoint .btnPointRight button {
+  background-color: #ffde00;
+}
+section .btnPoint .reset button {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(245, 171, 56, 1) 0%,
+    rgba(255, 222, 0, 1) 100%
+  );
+  width: 200px;
+}
+
+footer {
+  background-color: #fff;
+  width: 100%;
+  height: 80px;
+  position: relative;
+  top: -80px;
+  filter: blur(10px);
+}
+.namePlayer {
+  filter: none;
+  position: relative;
+  top: -80px;
+  z-index: 1;
+}
+.namePlayer > .logo {
+  display: flex;
+  gap: 220px;
+  position: absolute;
+  top: -50px;
+  left: 200px;
+}
+.namePlayer > .logo img {
+  width: 50px;
+}
+.player1 {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  left: 160px;
+}
+.player2 {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  left: 450px;
 }
